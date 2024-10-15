@@ -1,0 +1,232 @@
+/* Tools Section */
+.case{
+    background-color: #eee;
+    text-align: center;
+    color: #404040;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.case h1{
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.case .case-img .images1{
+    margin-bottom: 20px;
+}
+.case .case-img .images1 img{
+    width: 140px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-right: 20px;
+}
+.case .case-img .images1 .node{
+    padding: 24px 10px;
+}
+
+/* Companies Section */
+.case .case-img .company-images img{
+    width: 180px;
+    padding: 0px 30px;
+}
+
+/*  Benefits beyond learning section */
+.benefits{
+    color: #404040;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #eee;
+}
+.benefits h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.benefits .row{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    
+}
+.benefits .row .col{
+    width: 30%;
+    height: 200px;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+    margin-top: 20px;
+}
+.benefits .row .col .benefit-content{
+    text-align: center;
+}
+.benefits .row .col .benefit-content p{
+    font-weight: bold;
+    color: #404040;
+    font-size: 25px;
+}
+.benefits .row .col .benefit-content img{
+    width: 80px;
+}
+
+
+/* Job Bootcamp */
+.bootcamp h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #404040;
+    margin-top: 30px;
+}
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .table-container h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #404040;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  th, td {
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  /* Set light gray background for even rows */
+  tr:nth-child(even) td {
+    background-color: #f0f0f0;
+  }
+
+  td.checkmark {
+    text-align: center;
+  }
+
+  .checkmark:before {
+    content: "✔";
+    color: #007bff;
+    font-weight: bold;
+  }
+
+
+
+/* Placement benefits Section */
+
+
+
+/* Responsive for Tablets */
+@media screen and (max-width:1029px){
+     /* Case Studies Section */
+     .case {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+    .case .case-img{
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .case .case-img img {
+        width: 150px;
+        margin: 0 10px 10px 10px;
+    }
+
+     /* Company Section */
+     .case .case-img .company-images img{
+        width: 135px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+    .case .case-img .company-images{
+        margin-bottom: 0;
+    }
+    .case .case-img2{
+        flex-direction: column;
+    }
+
+    
+
+}
+
+/* Responsive for mobile */
+@media screen and (max-width:549px) {
+    /* Case Studies Section */
+    .case {
+        padding: 40px 10px;
+        }
+        .case h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+        .case .case-img{
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 0;
+        }
+        .case .case-img img {
+            margin: 0 10px 10px 10px;
+            margin-bottom: 20px;
+        }
+
+
+        /* Company Section */
+        .case .case-img .company-images img{
+            width: 135px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+        .case .case-img .company-images{
+            margin-bottom: 0;
+        }
+        .case .case-img2{
+            flex-direction: column;
+        }
+
+
+        /*  Benefits beyond learning section */
+        .benefits .row .col .benefit-content p{
+            font-size: 20px;
+        }
+        .benefits .row .col .benefit-content img{
+            width: 50px;
+        }
+
+
+        /* Job Bootcamp */
+        .table-container {
+            width: 90%;
+        }
+
+    } 
