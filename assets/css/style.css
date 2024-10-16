@@ -1,10 +1,54 @@
+
+/* Modules Section */
+.modules{
+    margin-bottom: 70px;
+}
+.modules h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #404040;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.slider {
+    width: 80%;
+    margin: auto;
+}
+.slider-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.slider-card h3 {
+    color: #3a6fa0;
+    font-size: 1.4em;
+    margin: 0 0 10px;
+}
+.slider-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 0;
+}
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+    font-size: 30px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 12px !important;
+}
+
 /* Tools Section */
 .case{
     background-color: #eee;
     text-align: center;
     color: #404040;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .case h1{
     font-size: 2.8rem;
@@ -35,13 +79,14 @@
 .benefits{
     color: #404040;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     background-color: #eee;
 }
 .benefits h1{
     text-align: center;
     font-size: 2.8rem;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .benefits .row{
@@ -83,7 +128,7 @@
     font-size: 2.8rem;
     font-weight: bold;
     color: #404040;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .table-container {
     width: 100%;
@@ -139,6 +184,66 @@
 
 
 /* Placement benefits Section */
+.benefits .row .benefits-col{
+    display: block;
+    padding-top: 30px;
+}
+.benefits .row .col .benefit-content2{
+    text-align: left;
+}
+.benefits .row .col .benefit-content2 p{
+    font-weight: bold;
+    color: #404040;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.benefits .row .col .benefit-content img{
+    width: 40px;
+}
+.benefits .row .benefits-col .benefit-content2 .para{
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* Review Section */
+.learner{
+    background-color: #eee;
+    padding-bottom: 30px;
+}
+.learner h1{
+    color: #404040;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.learner .learner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.learner .learner-container .learner-col{
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    margin-bottom: 20px;
+}
+.learner .learner-container .learner-col iframe{
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+}
+.learner .learner-container .learner-col h3,
+.learner .learner-container .learner-col p{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
 
 
 
@@ -175,6 +280,54 @@
         flex-direction: column;
     }
 
+
+     /*  Benefits beyond learning section */
+     .benefits .row {
+        flex-direction: column;
+    }
+    .benefits .row .col{
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .benefits .row .col .benefit-content p{
+        font-size: 20px;
+    }
+    .benefits .row .col .benefit-content img{
+        width: 50px;
+    }
+
+
+    /* Placement benefits Section */
+    .benefits .row .benefits-col{
+        display: block;
+        padding-top: 10px;
+    }
+
+
+    /* Job Bootcamp */
+    .table-container {
+        width: 90%;
+    }
+
+
+    /* Review Section */
+     .learner h1 {
+        padding: 30px 0;
+        font-size: 35px;
+    }
+    .learner .learner-container {
+        flex-wrap: wrap;
+    }
+    .learner .learner-container .learner-col {
+       width: 220px;
+    }
+    .learner .learner-container .learner-col iframe{
+        width: 180px;
+    }
+    .learner .learner-container .video iframe{
+          height: 180px;
+    }
+
     
 
 }
@@ -194,10 +347,14 @@
             display: flex;
             /* flex-wrap: wrap; */
             gap: 0;
+            padding-right: 0;
         }
         .case .case-img img {
             margin: 0 10px 10px 10px;
             margin-bottom: 20px;
+        }
+        .case .case-img .images1 img {
+            margin-right: 0;
         }
 
 
@@ -216,6 +373,13 @@
 
 
         /*  Benefits beyond learning section */
+        .benefits .row {
+            flex-direction: column;
+        }
+        .benefits .row .col{
+            width: 100%;
+            padding: 30px 20px;
+        }
         .benefits .row .col .benefit-content p{
             font-size: 20px;
         }
@@ -224,9 +388,70 @@
         }
 
 
+        /* Placement benefits Section */
+        .benefits .row .benefits-col{
+            display: block;
+            padding-top: 10px;
+        }
+
+
         /* Job Bootcamp */
         .table-container {
             width: 90%;
+        }
+
+        .benefits h1 {
+            font-size: 28px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        .bootcamp h1 {
+            font-size: 28px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        .title-details {
+            text-align: justify;
+        }
+        .register{
+            text-align: center;
+        }
+        .faq{
+            font-size: 28px;
+        }
+        .course{
+            font-size: 28px !important;
+        }
+        .features-content-section {
+            padding-left: 15px !important;
+        }
+        .features-card-content-section h3 {
+            font-size: 22px !important;
+        }
+        .features-card-content-section p {
+            font-size: 18px !important;
+        }
+        .highlights-card {
+            padding: 20px!important;
+            background-color: #fff;
+            margin: 10px;
+        }
+
+        /* Review Section */
+        .learner h1 {
+            padding: 0 10px;
+            font-size: 28px;
+        }
+        .learner .learner-container {
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 20px;
+        }
+        .learner .learner-container .learner-col{
+            width: 80%;
+        }
+        .learner .learner-container .learner-col iframe{
+            width: 100%;
         }
 
     } 

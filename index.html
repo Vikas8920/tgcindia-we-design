@@ -19,7 +19,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="author" content="Tgc India">
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link rel="icon" type="image/png" href="assets/images/courses/favicon.ico">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">   
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print"
 		onload="this.media='all'">
 	<link rel="stylesheet" type="text/css" href="assets/css/style3.min.css?ver=<?php echo time(); ?>" />
@@ -61,13 +64,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="navbar-brand">
 				<a class="navbar-brand-logo" href="index.html">
 					<img src="assets/images/TESTlogo.png" height="60px">
-					<!-- <h1 class="text-danger" style="font-size: 40px; font-weight: 900;">TGC</h1> -->
 				</a>
 				<div id="number">
 					<h2 class="margin-- font-weight-bold">Call: <a href="tel:9582786407"><span class="ml-0">9582786407</span></a></h2>
 				</div>
-				<!-- <a href="tel:1800 1020 418" > class="d-none d-md-block" -->
-				<!-- Toll Free: 1800 1020 418</a> -->
 			</div>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -93,11 +93,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<p class="nav-link-menu">Projects</p>
 						</a>
 					</li>
-					<!-- <li class="nav-item">
-							<a class="nav-link" href="#blogs">
-								<p class="nav-link-menu">Blog</p>
-							</a>
-						</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="#reviews">
 							<p class="nav-link-menu">Reviews</p>
@@ -143,30 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			 placeholder="Your Email"
 			 class="input"
 			 required
-		   /> 
-		   <!-- <input
-				  type="text"
-				  name="date"
-				   placeholder="Moving date?"
-				 
-				  id="date1"
-				  required
-				/>
-				<input
-				  type="text"
-				  name="from"
-				  placeholder="moving from?"
-				  id="from1"
-				  required
-				/>
-				<input
-				  type="text"
-				  name="to"
-				  placeholder="Moving to?"
-				  id="to1"
-				  required
-				/>
-		   -->
+		   />
 		  
 		   <button class="btn1 btnfloat" name="submitfloat" data-submit="...Sending">
 		Submit
@@ -192,10 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<p class="header-details">Join TGC For Best Website Designing Training in Delhi NCR. We offer Frontend, Full Stack Web development course. 
 					</p>
 					<p class="header-subtitle">
-						<!-- <input type="submit" class="btn" value="Download Brochure" name="download"> -->
 						<span class="header-subtitle" id="demo">
-							<!-- <a data-toggle="modal" href="#mymodel1" style="text-decoration: none;">
-								<input class="btn  text-white bold" type="submit" value="Download Brochure" name="download" style="background-color:#EC41FF;"> -->
 							<a class="btn text-uppercase hover-x show_desktop" data-toggle="modal" href="#mymodel1"
 								style="background-color:#FF4500; color: #ffff; padding: 18px 2%; height: 60px; margin: 22px 0; text-decoration: none;  font-weight: 400; border-radius: 0;"><span>
 									Get A Free Course Brochure </span> </a>
@@ -204,7 +173,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<span>Get Fee Details in 60 sec</span> </a>
 
 
-							<!--<a class="btn scroll sApp-btn text-uppercase fontsizesmallheading"> Get A Free Course Brochure </a>-->
 							<div class="modal fade" id="mymodel1">
 								<div class="modal-dialog">
 									<div class="modal-content">
@@ -229,7 +197,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="form-group">
 															<input type="email" class="form-control" name="email"
 																placeholder="Email" required="required">
-															<!-- <input type="text" id="website" name="website"/> -->
 														</div>
 														<div class="form-group">
 															<input type="tel" class="form-control" 
@@ -274,8 +241,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													</div>
 													<div class="col-md-12 contact-us-form-group p-0">
 														<input type="email" name="email" placeholder="Email">
-														<!-- Leave this here to help prevent SPAM -->
-														<!--<input type="text" id="website" name="website" />-->
 													</div>
 													<div class="col-md-12 contact-us-form-group p-0">
 														<textarea type="text" name="message"
@@ -293,20 +258,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 						</span>
 					</p>
-					<!-- <div class="header-social-section">
-							<a class="header-social-links" target="_blank" href="https://www.facebook.com/tgcin/">
-								<img src="assets/images/facebook.svg">
-							</a>
-							<a class="header-social-links" target="_blank" href="https://www.instagram.com/indiatgc/">
-								<img src="assets/images/instagram.svg">
-							</a>
-							<a class="header-social-links" target="_blank" href="https://in.linkedin.com/company/tgcin">
-								<img src="assets/images/linkedin.svg">
-							</a>
-							<a class="header-social-links" target="_blank" href="https://twitter.com/tgcindia?lang=en">
-								<img src="assets/images/twitter.svg">
-							</a>
-						</div> -->
 				</div>
 				<div class="col-lg-6 offset-lg-6 col-md-12 header-img-section">
 					<div class="header-img-div">
@@ -321,80 +272,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<!-- SECTION LABEL -->
 		<div id="highlights"></div>
-		<!-- HIGHLIGHTS SECTION -->
-		<!-- <div class="highlights-section">
-	<div class="highlights-bg-section">
-	</div>
-
-	<div class="container highlights-container">
-		<div class="col-lg-4 col-md-6 col-sm-12 highlights-cards-section">
-			<div class="highlights-card">
-				<div class="highlights-card-img-section">
-					<span class="highlights-card-content"><h2>Unique training methodology</h2></span>
-					<img src="assets/images/courses/panda2.png">
-				</div>
-				<div class="highlights-card-content">
-					<br>
-					<p>At TGC our training methodology includes daily practical sessions, Live industry guest sessions, Assignments and live projects to holistically train our students.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 col-sm-12 highlights-cards-section">
-			<div class="highlights-card highlights-card-center">
-				<div class="highlights-card-img-section">
-					
-					<span class="highlights-card-content highlights-card-content-white"><h2>Acc#EC41FFitations and Certifications</h2></span>
-					<img src="assets/images/courses/kid2.png">
-				</div>
-				<div class="highlights-card-content highlights-card-content-white">
-					<p>TGC- An ISO certified Institute and a mainstream partner of Media and Entertainment Skill Council (MESC),<br> Govt. of India for Skill India programme. An Authorised Testing center for Adobe and AutoDesk We will train you best for the future opportunities in the field of WEB DESIGN.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 col-sm-12 highlights-cards-section">
-			<div class="highlights-card">
-				<div class="highlights-card-img-section">
-					<span class="highlights-card-content"><h2>Industry aligned courses</h2></span>
-					<img src="assets/images/courses/anna2.png">
-				</div>
-				<div class="highlights-card-content">
-					<br>
-					<p>We understand the need of the WEB DESIGN industry and desi#EC41FF traits industry is looking for, hence we continue to strive to bring requisite changes in our course curriculum as per the industry needs and standards.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
 		<!-- SECTION LABEL -->
 		<div id="highlights"></div>
 
 
 		<!-- HIGHLIGHTS SECTION -->
+		<div id="features"></div>
 		<div class="highlights-section">
 			<div class="highlights-bg-section2">
 			</div>
 			<div class="col-md-12 title-section blog-title-section" style="z-index: 999;">
-				<!-- <p class="subtitle">Featu#EC41FF stories</p> -->
 				<h2 class="title">WEB DESIGN Courses @ TGC </h2>
 			</div>
 			<!--  -->
 			<div class="container highlights-container">
-
-
-				<div id="features"></div>
 				<!-- course -->
 				<div class="container highlights-container">
 					<div class="col-lg-4 col-md-6 col-sm-12 highlights-cards-section">
 						<div class="highlights-card">
 							<div class="highlights-card-img-section">
-								<!-- <img src="assets/images/courses/ia_100000007.gif"> -->
 								<img src="assets/images/webpro.webp" loading="lazy" decoding="async">
 
 							</div>
 							<div class="highlights-card-content">
 								<h2>Web Pro</h2>
-								<!-- <p>WEB PRO is a unique course in Web Design + Web Development + Internet Marketing.</p> -->
 								<p style="border-bottom: 1px gray solid; padding-bottom: 18px; ">
 									<b>Regular Track</b><br>
 									<b>(Duration : 1 year)</b><br><br>
@@ -407,7 +308,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<br>Weekdays & Weekends </b> </p>
 								<a class="a-style show_desktop feebtn" onclick="openPopup4()">Get Fee Details</a>
 								<a class="show_mobile mobile feebtn" style="text-decoration: none;" onclick="openPopup4()"> Get Fee Details <br> in 60 sec </a>
-								<!-- <p style="padding: 5px;"></p> -->
 								<p class="b-style" style="margin-top: 20px;"><a style="color: #0984E3;"
 										data-toggle="modal" href="#mymodel1" target="blank" download> Download
 										Brochure</a></p>
@@ -418,12 +318,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="highlights-card">
 							<div class="highlights-card-img-section">
 								<img src="assets/images/web_design.webp" loading="lazy" decoding="async">
-
-								<!-- <img src="assets/images/courses/ia_100000035.png"> -->
 							</div>
 							<div class="highlights-card-content">
 								<h2>Web Design</h2>
-								<!-- <p>Core Web Design with Web Design Project + Digital marketing + Web Domain and Hosting.</p> -->
 								<p style="border-bottom: 1px gray solid; padding-bottom: 18px; ">
 									<b>Regular Track</b><br>
 									<b>(Duration : 6 Months)</b><br><br>
@@ -436,7 +333,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<br>Weekdays & Weekends </b> </p>
 										<a class="a-style show_desktop feebtn" onclick="openPopup4()">Get Fee Details</a>
 										<a class="show_mobile mobile feebtn" style="text-decoration: none;" onclick="openPopup4()"> Get Fee Details <br> in 60 sec </a>
-								<!-- <p style="padding: 5px;"></p> -->
 								<p class="b-style" style="margin-top: 20px;"><a style="color: #0984E3;"
 										data-toggle="modal" href="#mymodel1" target="blank" download> Download
 										Brochure</a></p>
@@ -447,12 +343,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="highlights-card">
 							<div class="highlights-card-img-section">
 								<img src="assets/images/PHP.webp" loading="lazy" decoding="async">
-
-								<!-- <img src="assets/images/courses/ia_100000025.jpg"> -->
 							</div>
 							<div class="highlights-card-content">
 								<h2>Web Development</h2>
-								<!-- <p>At TGC, our PHP Programming course provides the knowledge necessary to develop dynamic, database-driven web pages.</p> -->
 								<p style="border-bottom: 1px gray solid; padding-bottom: 18px; ">
 									<b>Regular Track</b><br>
 									<b>(Duration : 3 Months)</b><br><br>
@@ -466,7 +359,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<br>Weekdays & Weekends </b> </p>
 										<a class="a-style show_desktop feebtn" onclick="openPopup4()">Get Fee Details</a>
 										<a class="show_mobile mobile feebtn" style="text-decoration: none;" onclick="openPopup4()"> Get Fee Details <br> in 60 sec </a>
-								<!-- <p style="padding: 5px;"></p> -->
 								<p class="b-style" style="margin-top: 20px;"><a style="color: #0984E3;"
 										data-toggle="modal" href="#mymodel1" target="blank" download> Download
 										Brochure</a></p>
@@ -496,7 +388,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="form-group">
 											<input type="email" class="form-control" name="email" placeholder="Email"
 												required="required" />
-											<!-- <input type="text" id="website" name="website"/> -->
 										</div>
 										<div class="form-group">
 											<input type="tel" class="form-control" pattern="[0-9]{10}" name="Phone"
@@ -520,7 +411,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
-			<!--  -->
 		</div>
 
 
@@ -531,13 +421,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="col-lg-12 col-md-12 features-content-section">
 					<div class="col-md-12 title-section features-title-section">
 
-						<h2 align="center" class="title">Course Modules - Web Design Courses in Delhi</h2>
+						<h2 align="center" class="title course">Course Modules - Web Design Courses in Delhi</h2>
 
 					</div>
 
 					<div class="container">
 
-						<div class="row">
+						<div class="row module-row">
 
 
 							<div
@@ -547,10 +437,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 1 <br></h3>
 										<p>
 										<p> Designing User Interface of a Webpage </p>
-										<!--<hr>
-															<p>Design & Culture</p> <hr>-->
-										<!--<p>Illustrations Art </p> -->
-
 										</p>
 									</div>
 
@@ -564,9 +450,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 2 <br></h3>
 										<p>
 										<p>Core UI & Web Functionality using various Technologies</p>
-										<!--<hr>
-															<p> Colour Theory </p> <hr>-->
-										<!--<p>Packaging Design </p> -->
 
 										</p>
 									</div>
@@ -581,10 +464,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 3 <br></h3>
 										<p>
 										<p>HTML5, Bootstrap and CSS3, JavaScript, JQuery and Angular </p>
-										<!--<hr>
-															<p>Advanced Typography </p> <hr>-->
-
-										<!--<p>Color Theories</p> -->
 										</p>
 									</div>
 
@@ -604,10 +483,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 4 <br></h3>
 										<p>
 										<p>Core PHP & Content Management Systems </p>
-										<!--<hr>
-															<p>Product Photography </p> <hr>-->
-
-										<!--<p>Case studies and Projects </p> -->
 										</p>
 									</div>
 
@@ -621,10 +496,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 5 <br></h3>
 										<p>
 										<p>Advanced PHP & E-commerce integration </p>
-										<!--<hr>
-															<p>Prepress & Production </p> <hr>-->
-
-										<!--<p>Advanced Layout & production </p> -->
 										</p>
 									</div>
 
@@ -638,10 +509,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">Module 6 <br></h3>
 										<p>
 										<p>Woo Commerce (Open Source Shopping Cart) </p>
-										<!--<hr>
-															<p>Advertising Campaigns (2) </p> <hr>-->
-
-										<!--<p>Portfolio Refining with CG </p> -->
 										</p>
 									</div>
 
@@ -661,10 +528,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">MODULE 7 <br></h3>
 										<p>
 										<p> Laravel (Framework) and Various Applications</p>
-										<!--<hr>
-															<p>Designing for Social Media </p> <hr>-->
-
-										<!--<p>Working on Magazines </p> -->
 										</p>
 									</div>
 
@@ -678,10 +541,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;"> Module 8 <br></h3>
 										<p>
 										<p>Digital Marketing- Advanced Search Engine Optimization (SEO) </p>
-										<!--<hr>
-															<p>Copywriting in Design </p> <hr>-->
-
-										<!--<p>Logo Design Workshops </p> -->
 										</p>
 									</div>
 
@@ -695,10 +554,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h3 style="font-size: 16px; padding-bottom: 30px;">MODULE 9 <br></h3>
 										<p>
 										<p>Social media optimization (SMO) and advancements</p>
-										<!--<hr>
-															<p>Portfolio Refining </p> <hr>-->
-
-										<!--<p>Attending Design Interviews </p> -->
 										</p>
 									</div>
 
@@ -744,8 +599,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<!-- modules -->
 
-		<div id="Projects"></div>
-		<div class="features-section" style="padding-bottom: 0; background-color: #eeeeee; ">
+		<!-- <div id="Projects"></div> -->
+		<!-- <div class="features-section" style="padding-bottom: 0; background-color: #eeeeee; ">
 			<div class="container features-container">
 				<div class="col-lg-12 col-md-12 features-content-section2">
 					<div class="col-md-12 title-section features-title-section">
@@ -757,12 +612,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-12 features-card2 ">
-								<!-- <div class="features-card-img-section">
-							<i class="far fa-check-circle fa-2x"></i>
-						</div> -->
 								<div class="features-card-content-section p-3" style="border-radius: 25px; 
 						background-color:white;">
-									<!-- <h3 class="text-center p-2 pb-5">Adv. Diploma Course in Web Design</h3> -->
 									<div class="row">
 										<ul class="col-lg-6 col-sm-12">
 
@@ -825,7 +676,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												Javascript Tip Calculator</li>
 											<li class="h5 mt-4"><i class="far fa-check-square"></i> Build A Javascript
 												Mouseover Element</li>
-											<!-- <li class="h5 mt-4 c-colorr"><i class="far fa-check-square"></i> Build A Javascript Animated Navigation Toggle</li> -->
 										</ul>
 										<ul class="col-lg-6 col-sm-12">
 											<li class="h5 mt-4"><i class="far fa-check-square"></i> Build A Javascript
@@ -886,7 +736,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 											<li class="h5 mt-4"><i class="far fa-check-square"></i> Creating a
 												Designer’s Portfolio with WordPress</li>
-											<!-- <li class="h5 mt-4 c-colorr"><i class="far fa-check-square"></i> Converting A Wp Fitness Theme in An Actual Site Landing Page Design for An Education Company Using Conversion Extensions in A Wordpress Page. -->
 											</li>
 
 										</ul>
@@ -898,12 +747,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 						</div>
-						<!---row end-->
 
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
+		<div id="Projects"></div>
+		<section class="modules">
+			<h2>Projects Covered</h2>
+
+			<div class="slider">
+				<div class="slider-card">
+					<h3>Project 1</h3>
+					<p style="color: black; font-weight: bold;">Landing Page</p>
+					<p style="text-align: justify;">Create a responsive and visually engaging landing page designed to capture user interest, promote a product or service, and drive conversions through compelling content, clear calls-to-action, and optimized user experience.</p>
+				</div>
+				<div class="slider-card">
+					<h3>Project 2</h3>
+					<p style="color: black; font-weight: bold;">Restaurant or Education institute Website</p>
+					<p style="text-align: justify;">create a responsive website for a Restaurant/Education Institute, featuring key offerings like menus or courses, testimonials, and a contact form. The design will prioritize user experience and easy navigation.</p>
+				</div>
+				<div class="slider-card">
+					<h3>Project 3</h3>
+					<p style="color: black; font-weight: bold;"> Creating a Personal Blog Website</p>
+					<p style="text-align: justify;">This project involves creating a responsive personal blog website. It will feature a clean layout, categories for posts, an about section, and options for readers to comment and share content easily.</p>
+				</div>
+				<div class="slider-card">
+					<h3>Project 4</h3>
+					<p style="color: black; font-weight: bold;">Creating a Designer’s Portfolio with WordPress</p>
+					<p style="text-align: justify;">This project involves creating a designer's portfolio using WordPress. It will showcase work through galleries, project details, and client testimonials, with a sleek, responsive design to attract clients.</p>
+				</div>
+				<div class="slider-card">
+					<h3>Project 5</h3>
+					<p style="color: black; font-weight: bold;">Design Like a TV channel site</p>
+					<p style="text-align: justify;">This project involves designing a TV channel website with a dynamic, visually engaging layout. It will show schedules, video-on-demand sections, and a user-friendly interface to enhance viewer interaction and content discovery.</p>
+				</div>
+			</div>
+		</section>
 		<!--end module -->
 
 		<!-- Benefits beyond learning section -->
@@ -983,6 +863,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
 
 		<!-- Placement benefits Section -->
+
+		<section class="benefits">
+			<h1>Placement Benefits</h1>
+			<div class="row">
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/profiles.png" alt="github">
+						<p>Profiles highlighted on hirist.com</p>
+						<p class="para">Make a distinct mark for yourself on India's leading job portal.</p>
+					</div>
+				</div>
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/hiring.webp" alt="github">
+						<p>1200+ Hiring partners</p>
+						<p class="para">Expanded job search with a vast network of hiring partners.</p>
+					</div>
+				</div>
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/job.webp" alt="github">
+						<p>800+ monthly job openings</p>
+						<p class="para">Get access to an abundance of job openings every month.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/tie.webp" alt="github">
+						<p>Dedicated placement coach</p>
+						<p class="para">Guiding and motivating you every step of the way.</p>
+					</div>
+				</div>
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/team.webp" alt="github">
+						<p>50+ Members placement team</p>
+						<p class="para">A dedicated team to help you get placed in your dream company.</p>
+					</div>
+				</div>
+				<div class="col benefits-col">
+					<div class="benefit-content benefit-content2">
+						<img src="assets/images/whatsapp.webp" alt="github">
+						<p>Job openings shared every day</p>
+						<p class="para">We send job openings daily to your WhatsApp directly</p>
+					</div>
+				</div>
+			</div>
+		 </section>
 		
 
 
@@ -1097,7 +1027,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="col-md-12 title-section contact-us-title-section">
 							<!-- <p class="subtitle">Contact the team</p> -->
 							<h2 class="title change-title">I Want To Start With A <br> Free Demo!!!</h2>
-							<p class="title-details">Register Now</p>
+							<p class="title-details register">Register Now</p>
 						</div>
 						<div class="form-section">
 							<form class="contact-us-form" method="post" action="contact-body.php" novalidate>
@@ -1132,7 +1062,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="col-md-8 col-sm-12">
 				<div class="accordion text-justify" id="accordionExample">
 					<h1 class="text-center h1"><span class="d-none d-sm-block">FAQ'S - Web Design Courses in
-							Delhi</span> <span class="d-block d-sm-none">FAQ's - Web Design Courses in Delhi</span>
+							Delhi</span> <span class="d-block d-sm-none faq">FAQ's - Web Design Courses in Delhi</span>
 					</h1>
 					<div class="crd card ">
 						<div class=" card-header" id="headingOne">
@@ -1220,17 +1150,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 		<!-- PARTNERS SECTION -->
-		<div class="partners-section2">
+		<!-- <div class="partners-section2">
 			<div class="partners-bg-section-left">
 			</div>
 			<div class="partners-bg-section-right">
 			</div>
 			<div class="container partners-section-container">
 				<div class="col-md-12 title-section partners-title-section">
-					<!-- <p class="subtitle">We work with the best</p> -->
 					<h2 class="title" style="font-size: 30px;">Reputed E-commerce And IT Companies In India And Abroad
 					</h2>
-					<!-- <p class="title-details">We work with some of the greatest companies in the industry to help<br> deliver our services around the world</p> -->
 				</div>
 				<div class="container partners-slider-container">
 					<div class="owl-carousel owl-theme partner-carousel">
@@ -1287,67 +1215,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!--END PARTNERS SECTION -->
 
-		<!-- <div id="contact-us" class="contact-us-section">
-	<div class="container contact-us-container">
-		<div class="container contact-us-content-container ">
-			<div class="col-md-4 contact-us-header-img-section" id="contactusanime">
-				<img src="assets/images/courses/contact__.png">
-			</div>
-			<div class="col-md-6 contact-us-form-section ">
-				<div class="col-md-12 title-section contact-us-title-section">
-					
-					<h2 class="title2">Get A Call</h2>
-				</div>
-
-				<div class="form-section">
-					<form class="contact-us-form" method="post" action="contact.php">
-						<div class="col-md-12 contact-us-form-group">
-							<input type="tel" name="phone" placeholder="Phone Number">
-						</div>
-						<div class="col-md-12 contact-us-form-group">
-							<input type="email" name="email" placeholder="Email">
-					
-							<input type="text" id="website" name="website"/>
-						</div>
-						<div class="col-md-12 contact-us-form-group">
-							<textarea type="text" name="message" placeholder="Message"></textarea>
-						</div>
-						<div class="col-md-12 contact-us-form-group">
-							<button class="contact-us-form-btn">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</div> -->
-
 		<!-- SECTION LABEL -->
-		<div id="reviews"></div>
+		<!-- <div id="reviews"></div> -->
 		<!-- REVIEWS SECTION -->
-		<div class="reviews-section">
+		<!-- <div class="reviews-section">
 			<div class="container">
 				<div class="col-md-12 title-section reviews-title-section">
 
 					<h2 class="title">Students Reviews</h2>
-				</div>
-				<div class="container reviews-slider-container">
+				</div> -->
+				<!-- <div class="container reviews-slider-container">
 					<div class="owl-carousel owl-theme reviews-carousel">
 						<div class="item">
 							<div class="reviews-card-section">
 								<div class="reviews-card">
 									<div class="reviews-card-img-section">
 										<img src="assets/images/user2.svg">
-										<!-- <img src="assetsAsh/images/review1.jpg"> -->
 									</div>
 									<div class="reviews-card-title">
 										<h3>Joel Pariat</h3>
-										<!-- <p>Adv. Certification in Sound Engineering</p> -->
 									</div>
 									<div class="reviews-card-details-section">
 										<p>
@@ -1417,15 +1307,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div> -->
+			
+			
+			<!-- </div>
+		</div> -->
+
+
+      <!-- Review Section -->
+	  <div id="reviews"></div>
+		<section class="learner">
+            <h1>Here's what our learners say!</h1>
+            <div class="learner-container">
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/videoseries?si=NFKQ1hfm4xOsLWpJ&amp;list=PLzVMji3BVLOQa6sJnmBG4lA9JEhQ0FNcK" frameborder="0" allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/no0WKkTCS6Y?si=5oiUw7Z2IpGzrT3r" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/Qno9Nc2_LPA?si=uTuJPdgmz2MfaGlX" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+            </div>
+
+
+            <div class="learner-container">
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/8a_MSVhxUeM?si=4EfXwoP0nkXIiQKO" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/3CkEYUNFMXI?si=eUkJQikG5foWb4tD" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/dw86F_DZnVQ?si=cNmTxy_BW9JFYIdv" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+            </div>
+
+
+
+            <div class="learner-container">
+                <div class="learner-col">
+                    <iframe src="https://www.youtube.com/embed/ahm6YpncDcc?si=PceQVtOk6AGUiAOD" frameborder="0"  allowfullscreen></iframe>
+                    <h3>Student Reviews</h3>
+                </div>
+            </div>
+        </section>
 		<!-- review -->
 
 
 
 		<!-- apply now -->
-		<div class="partners-section2">
+		<!-- <div class="partners-section2">
 			<div class="partners-bg-section-left">
 			</div>
 			<div class="partners-bg-section-right">
@@ -1436,26 +1374,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<p class="title change-title">Still Not Convinced ?<br><span style="font-size: 30px;">Take A Free
 							Demo Now!</span>
 					</p>
-
-					<!-- <p class="title-details">
-						You can now apply online for the course you choose. Please provide all the details mentioned in the form.
-						
-					</p> -->
-					<!-- <a data-toggle="modal" href="#mymodel2" style="text-decoration: none;">
-					<input class="btn text-white bold show_desktop" type="submit" value="Yes! Book My Free Demo" name="download" style="background-color:#EC41FF; margin-top: 20px;"></a>
-					<a class="show_mobile" style="text-decoration: none;">  Yes! Book a Free Demo </a> -->
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 
 		<!-- MAP -->
 
 		<div class="container-fluid m-0 p-0">
-
-			<!-- <div class="col-lg-8 col-md-12 features-content-section"> -->
-
-
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.0065907118376!2d77.22150667287363!3d28.56936689427179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce25c88195173%3A0xd757b04e9e8a77ca!2sTGC%20Animation%20%26%20Multimedia!5e0!3m2!1sen!2sin!4v1609308911735!5m2!1sen!2sin"
 				width="100%" height="400" frameborder="0" loading="lazy" decoding="async" style="border:0;"
@@ -1549,7 +1475,12 @@ Opposite to Metro Pillar No. 100, Delhi-110092</li>
 
 
 	<!-- SCRIPTS -->
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 		<script>
 jQuery.event.special.touchstart = {
     setup: function( _, ns, handle ) {
@@ -1568,6 +1499,10 @@ jQuery.event.special.touchmove = {
 	<script src="assets/js/owlcarousel/owl.carousel.min.js" ></script>
 	<script src="assets/js/smoothscroll.js" defer></script>
 	<script src="https://kit.fontawesome.com/b342844423.js" crossorigin="anonymous" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
 	<!--font awsome kit here-->
 	<!-- font awesome -->
 	<!--<script src='assets/js/mixitup.min.js'></script>-->
@@ -1665,6 +1600,7 @@ jQuery.event.special.touchmove = {
    }
 	 </script>
 	 <!-- float popup script end -->
+	  
 </body>
 
 </html>
