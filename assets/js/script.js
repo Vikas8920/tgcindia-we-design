@@ -3,9 +3,11 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
               breakpoint: 1024,
