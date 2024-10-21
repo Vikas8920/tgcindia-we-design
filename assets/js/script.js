@@ -38,3 +38,24 @@ $(document).ready(function(){
           ]
     });
 });
+
+
+// Key Highlights
+$(document).ready(function() {
+  // Show first content by default
+  $('.content').first().addClass('active');
+  $('.tab').first().addClass('active');
+
+  // Handle tab click
+  $('.tab').on('click', function() {
+      var tabId = $(this).data('tab');
+
+      // Remove active class from all tabs and contents
+      $('.tab').removeClass('active');
+      $('.content').removeClass('active');
+
+      // Add active class to clicked tab and corresponding content
+      $(this).addClass('active');
+      $('#' + tabId).addClass('active');
+  });
+});
