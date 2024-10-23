@@ -376,6 +376,217 @@
 }
 
 
+/* Certificate Section */
+.certificate{
+    margin-top: 60px;
+    color: #404040;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.certificate-section {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+    margin: 0 auto;
+   
+}
+
+.certificate-image {
+    width: 600px;
+    height: 400px;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.certificate-info {
+    flex: 1 1 40%;
+    padding: 10px;
+}
+
+.certificate-info h2 {
+    color: #1f3d7a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.certificate-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #f5f7fa;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.stat-item span {
+    display: block;
+    font-size: 24px;
+    color: #1f3d7a;
+}
+
+.stat-item small {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Guranteed Job */
+.job-section {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.job-section .left {
+    flex: 1;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-section .left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.job-section .right {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.job-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.job-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.job-step {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.job-step img {
+    width: 40px;
+    height: 40px;
+}
+
+.job-step-content {
+    flex: 1;
+}
+
+.job-step-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.job-step-content p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+
+/* limited seats Form Section */
+#offer-form {
+    position: fixed;
+    right: 0;
+    top: 70px;
+    width: 300px;
+    background: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#offer-form h2 {
+    color: #ff6347;
+    text-align: center;
+}
+
+#offer-form p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#offer-form input[type="text"],
+#offer-form input[type="email"],
+#offer-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    /* margin: 8px 0; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#offer-form button {
+    width: 100%;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#offer-form button:hover {
+    background-color: #ff4500;
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 34px;
+    cursor: pointer;
+    color: #333;
+}
+.error{
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: red;
+}
 
 /* Responsive for Tablets */
 @media screen and (max-width:1029px){
@@ -678,6 +889,58 @@
         }
         .content ul {
             text-align: left;
+        }
+
+
+        /* Certificate Section */
+        .certificate {
+            font-size: 20px;
+        }
+        .certificate-section {
+            width: 80%;
+            flex-direction: column;
+            padding: 0;
+        }
+        .certificate-image {
+            width: 100%;
+            height: 250px;
+        }
+
+        .certificate-info h2 {
+            font-size: 20px;
+        }
+
+        .certificate-info p {
+            font-size: 16px;
+        }
+
+
+        /* Guranteed Job */
+        .job-section {
+            width: 100%;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .job-section .left {
+            width: 100%;
+        }
+        .job-section .right {
+            width: 100%;
+        }
+
+        .job-step {
+            flex: 1 1 100%;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        /* limited seats Form Section */
+        #offer-form {
+            width: 90%;
+            left: 5%;
+            right: 5%;
         }
 
     } 
