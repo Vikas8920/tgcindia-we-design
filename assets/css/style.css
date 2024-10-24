@@ -921,13 +921,19 @@
         }
         .highlight h2 {
             font-size: 20px;
-            padding: 0
+            padding: 0;
+            text-align: justify;
         }
         .content p{
-            text-align: center;
+            text-align: left;
         }
         .content ul {
             text-align: left;
+        }
+
+        .grnt{
+            font-size: 22px !important;
+            padding: 0 20px !important;
         }
 
 
@@ -987,5 +993,13 @@
             left: 5%;
             right: 5%;
         }
+
+        .hands{
+            font-size: 25px !important;
+      }
+
+      .header-details {
+        font-size: 20px !important; 
+    }
 
     } 
