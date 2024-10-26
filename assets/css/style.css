@@ -391,6 +391,90 @@
 }
 
 
+/* Key highlights for mobile view */
+    .mhighlight h2{
+        color: #404040;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .mhightlight-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1000px;
+        margin: 50px auto;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+/* Left section styles */
+.mcontainer{
+    display: none;
+}
+    .mleft-section {
+        flex: 1;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-right: 1px solid #ddd;
+    }
+
+    .mtab {
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .mtab.mactive, .mtab:hover {
+        background-color: rgb(225, 225, 225);
+    }
+
+    /* Right section styles */
+    .mright-section {
+        flex: 2;
+        /* padding-top: 30px; */
+        padding: 20px;
+    }
+
+    .mcontent {
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .mcontent.mactive {
+        display: block;
+    }
+
+    .mcontent h2 {
+        font-size: 28px;
+        color: black;
+        margin-bottom: 15px;
+    }
+
+    .mcontent p, .mcontent ul {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+        /* text-align: center; */
+    }
+
+    /* List styles */
+    .mcontent ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+
+
+
+
 /* Certificate Section */
 .certificate{
     margin-top: 60px;
@@ -537,6 +621,7 @@
 .job-step-content h3 {
     margin: 0;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .job-step-content p {
@@ -743,6 +828,11 @@
           height: 180px;
     }
 
+    .mcontainer {
+        flex-direction: column;
+        display: none;
+    }
+
     
 
 }
@@ -909,6 +999,7 @@
         .hightlight-container {
             flex-direction: column;
             width: 100%;
+            display: none;
         }
     
         .right-section {
@@ -920,9 +1011,9 @@
             text-align: center;
         }
         .highlight h2 {
-            font-size: 20px;
+            font-size: 20px !important;
             padding: 0;
-            text-align: justify;
+            text-align: center;
         }
         .content p{
             text-align: left;
@@ -935,6 +1026,40 @@
             font-size: 22px !important;
             padding: 0 20px !important;
         }
+
+        /* Key highlights for mobile view */
+        .mcontainer {
+            flex-direction: column;
+            display: block;
+        }
+    
+        .mleft-section {
+            width: 100%;
+        }
+
+        .mcontent ul {
+            margin-left: 0px;
+            padding: 0;
+            list-style: decimal !important;
+        }
+        .mcontent h2 {
+            font-size: 20px !important;
+            text-align: justify;
+        }
+    
+        /* Hide contents by default for mobile */
+        .mcontent {
+            display: none;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+    
+        /* Show the active content */
+        .mcontent.mactive {
+            display: block;
+        }
+
 
 
         /* Certificate Section */
@@ -1000,6 +1125,10 @@
 
       .header-details {
         font-size: 20px !important; 
+    }
+
+    #offer-form{
+        display: none;
     }
 
     } 

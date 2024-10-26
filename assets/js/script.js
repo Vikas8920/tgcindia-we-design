@@ -61,6 +61,41 @@ $(document).ready(function() {
 });
 
 
+// Key hightlights for mobile view
+$(document).ready(function() {
+  // Default active tab and content for desktop view
+  if ($(window).width() > 549) {
+      $('.mcontent').first().addClass('mactive');
+      $('.mtab').first().addClass('mactive');
+  }
+
+  // Handle tab click
+  $('.mtab').on('click', function() {
+      var tabId = $(this).data('mtab');
+
+      // For desktop view
+      if ($(window).width() > 549) {
+          // Remove active class from all tabs and contents
+          $('.mtab').removeClass('mactive');
+          $('.mcontent').removeClass('mactive');
+
+          // Add active class to clicked tab and corresponding content in the right section
+          $(this).addClass('mactive');
+          $('#' + tabId).addClass('mactive');
+      } 
+      // For mobile view
+      else {
+          // Close all content sections before opening the clicked one
+          $('.mcontent').removeClass('mactive');
+          
+          // Toggle the selected content section
+          $('#' + tabId).addClass('mactive');
+      }
+  });
+});
+
+
+
 // limited seats Form Section
 
 $(document).ready(function () {
