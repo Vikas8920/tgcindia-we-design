@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Send email to administrator
-    $to = "info@tgcfaridabad.com, info@tgc.com, info@tgcindia.com";  
+    $to = "info@tgcindia.com";  
     $subject = "New Form Submission: $formName";
     $headers = "From: info@tgcfaridabad.com\r\n";
-    $headers .= "Reply-To: info@tgcfaridabad.com\r\n";
+    $headers .= "Reply-To: info@tgcindia.com\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function sendConfirmationEmail($name, $email) {
     $to = $email;
     $subject = "Thank You for Your Submission";
-    $headers = "From: info@tgcfaridabad.com\r\nReply-To: info@tgcfaridabad.com\r\nX-Mailer: PHP/" . phpversion();
+    $headers = "From: info@tgcindia.com\r\nReply-To: info@tgcindia.com\r\nX-Mailer: PHP/" . phpversion();
     $message = "Dear $name,\n\nThank you for your interest. We have received your submission and will contact you shortly.\n\nBest regards,\nTGC India";
 
     mail($to, $subject, $message, $headers);
