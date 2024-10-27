@@ -633,9 +633,9 @@
 
 /* limited seats Form Section */
 #offer-form {
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 90px;
+    top: 150px;
     width: 300px;
     background: #f4f4f4;
     border: 2px solid #ccc;
