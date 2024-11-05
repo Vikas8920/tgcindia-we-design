@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send email to administrator
     $to = "info@tgcindia.com";  
     $subject = "New Form Submission: $formName";
-    $headers = "From: info@tgcfaridabad.com\r\n";
+    $headers = "From: info@tgcindia.com\r\n";
     $headers .= "Reply-To: info@tgcindia.com\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
